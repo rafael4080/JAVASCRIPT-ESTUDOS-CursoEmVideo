@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+       div#evento{
+        font-family:Arial, sans-serif;
+        font-size: 2rem;
+        color:blue;
+        background-color: chartreuse;
+        width:200px;
+        height:200px;
+        line-height: 200px;
+        text-align:center;
+     }
+    </style>
+</head>
+<body>
+    <div id ="evento" >
+      AÇÃO
+    </div>
+    <script>
+        var  a = window.document.getElementById("evento")
+        a.addEventListener('click' ,clicar)
+        a.addEventListener('mouseenter' ,entrar)
+        a.addEventListener( 'mouseout',sair)
+  
+    function clicar(){
+        a.innerText= `clicou!`
+        a.style.background=`red`;
+        a.style.color='white';
+    } 
+    function entrar(){
+     a.innerText =`entrou!`
+     a.style.background=`yellow`;
+     
+    }
+    function sair(){
+    a.innerText = `saiu!`
+    a.style.background=`black`
+    }
+       /* var cli = window.document.getElementById("clicando")
+        cli.addEventListener('click' , clicar)
+        cli.addEventListener('mouseenter', entrar)
+        cli.addEventListener('mouseout', sair)
+        function clicar (){
+            cli.innerText =`clicou!`
+            cli.style.background = `red`
+        }
+        function entrar(){
+         cli.innerText =`entrou`
+         cli.style.background = `blue`
+        }
+        function sair(){
+            cli.innerText= `saiu`
+            cli.style.background = `green`
+        }*/
+
+    </script>
+</body>
+</html>

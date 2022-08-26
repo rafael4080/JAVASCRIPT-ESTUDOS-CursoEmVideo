@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento_DOM</title>
+    <style>
+        div#arvore{
+         font:normal 15pt Arial;
+         color: white;
+         background:cornflowerblue;
+         width: 200px;
+         height: 200px;
+         line-height: 200px;
+         text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="arvore">
+         EVENTOS DOM.
+    </div>
+    <script>
+        var d =window.document.getElementById("arvore")
+        d.addEventListener('click' ,clicar)
+        d.addEventListener('mouseenter',entrar)
+        d.addEventListener('mouseout',sair)
+        function clicar(){
+         d.innerText ="Clicou"
+         d.style.background ="red"
+        }
+        function entrar(){
+        d.innerText="Entrou"
+        }
+        function sair(){
+        d.innerText="saiu"
+        d.style.background="green"
+        }
+    </script>
+</body>
+</html>

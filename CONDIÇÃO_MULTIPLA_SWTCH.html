@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Condições aninhadas</h1>
+    <script>
+var agora =new Date()
+var horas = agora.getHours()
+document.write(`<p>Agora são exatamente <strong>${horas}horas.</strong></p>`)
+if(horas <12){
+document.write(`Bom dia!`)
+}else if(horas <=18){
+     document.write(`Boa tarde!`)
+} else if(horas <=00){
+   document.write(`Boa noite`)
+}else{
+   document.write(`Boa madrugada`);
+}
+/*var horas = 23;    
+document.write(`<p>Agora são exatamente <strong>${horas}horas.</strong></p>`)
+if(horas <12){
+document.write(`Bom dia!`)
+}else if(horas <=18){
+     document.write(`Boa tarde!`)
+} else if(horas <=00){
+   document.write(`Boa noite`)
+}else{
+   document.write(`Boa madrugada`);
+}*/
+    
+
+ /*  var idade =60;
+   if(idade <16){
+      document.write(`Não vota`);
+   }
+  else
+       if(idade <18 || idade >67){
+          document.write(`Voto opcional`)
+       }else{
+         document.write(`Voto obrigatório.`)
+         }*/
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRATICA</title>
+    <style>
+        div#praticando{
+         font:normal 30px Arial;
+         color:yellow;
+         background: blue;
+        width:200px;
+        height:200px;
+        line-height:200px;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id= "praticando" >
+       interagindo
+    </div>
+<script>
+    var p = window.document.getElementById("praticando")
+    p.addEventListener('click', clicar)
+    p.addEventListener('mouseenter' ,entrar)
+    p.addEventListener('mouseout',sair)
+   
+    function clicar (){
+    p.innerText ="clicou"
+    p.style.background="red"
+    } 
+    function entrar(){
+        p.innerText= "entrou"
+        p.style.background="blue" 
+        }
+    function sair(){
+        p.innerText="saiu"
+        p.style.background="black"
+       }
+       /*  var p = window.document.getElementById("praticando")
+   
+         function clicar (){
+
+         p.innerText ="clicou"
+         p.style.background="red"
+
+         }
+         function entrar(){
+             p.innerText= "entrou"
+            p.style.background="blue"
+        
+         }
+         function sair(){
+        p.innerText="saiu"
+        p.style.background="black"
+
+         }*/
+</script> 
+</body>
+</html>

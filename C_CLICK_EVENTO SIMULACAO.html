@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+div#Dom{
+background:yellow;
+color:black;
+font: normal 20pt Arial;
+width:200px;
+height:200px;
+line-height:200px;
+text-align:center;
+}
+</style>
+</head>
+<body>
+<div id="Dom">
+     Evento
+</div>
+<script>
+/*var d= window.document.getElementById("Dom")
+d.addEventListener('click',clicar)
+d.addEventListener(`mouseenter`,entrar)
+d.addEventListener(`mouseout`,sair)
+function clicar(){
+    d.innerText=`clicou` 
+    d.style.background=`green`
+}
+function entrar (){
+d.innerText= 'Entrou'
+d.style.background=`red`
+
+}
+function sair(){
+d.innerText=`Saiu`
+d.style.background=`pink`
+
+}*/
+var c =window.document.getElementById("Dom")
+c.addEventListener(`click`,clicar)
+c.addEventListener(`mouseenter`,entrar)
+c.addEventListener(`mouseout`,sair)
+function  clicar(){
+c.innerText=`clicou`
+c.style.background=`red`
+}
+function entrar(){
+c.innerText=`entrou`
+c.style.background=`green`
+}
+function sair (){
+c.innerText=`sair`
+c.style.background=`yellow`
+}
+</script>
+</body>
+</html>
